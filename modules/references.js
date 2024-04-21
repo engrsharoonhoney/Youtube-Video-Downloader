@@ -1,0 +1,16 @@
+export const searchBtn = document.getElementById('search-button');
+export const searchBox = document.getElementById('searchInput');
+export const clearSearchBtn = document.getElementById('clear-icon');
+export const thumbnailImage = document.getElementById('thumbnail-img');
+export const videoTitle = document.getElementById('title');
+export const videoLength = document.getElementById('duration');
+export const dropdownMenu = document.getElementById('dropdownContent');
+export const selectDownloadBtn = document.getElementById('dropdownButton');
+export const downloadBtn = document.getElementById('download-btn');
+export const downloadBox = document.getElementById('download-box');
+// export const loaderContainer = document.getElementById('loaderContainer');
+export const loaderContainer = document.getElementById('loader');
+export const downloadBtnContainer = document.getElementById('downloadBtn-container');
+export const downloadContentContainer = document.getElementById('downloadContent-container');
+export const errorCode = document.getElementById('error-code');
+export const connectionError = document.getElementById('connection-error');

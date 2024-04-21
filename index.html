@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video Downloader Online</title>
+    <link rel="stylesheet" href="./styles_secure.css">
+    <link rel="shortcut icon" href="./youtubedownloadericon.png" type="image/png">
+</head>
+
+<body >
+
+<header>
+    <img style="width: 32px; margin: auto 4px;" src="./assets/youtubedownloader_navBaricon.png" alt="">
+    <h3>YouTube Downloader</h3>
+    <h5 style="margin-left: auto;">Beta Version!</h5>
+</header>
+
+    <div class="container">
+
+        <h1 id="main-title" style="">Paste the video <em>"URL"</em> in Search...</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+            <span class="clear-icon" id="clear-icon" onclick="clearSearch()">✖</span>
+            <button type="button" class="search-button" id="search-button">DOWNLOAD</button>
+        </div>
+
+        <div class="norton">
+            <p>Scanned by</p>
+            <img src="./assets/norton.svg">
+            <p>Norton<sup>TM</sup> Safe Web</p>
+        </div>
+
+        <!-- Loader container -->
+        <div id="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div id="error-code">
+            <h1 style="color:rgb(248, 79, 79); margin-top: 45px;">Sorry Link Error! <h3 style="color: #4CAF50;">Kindly
+                    Search Again with this link format: <em style="color: black;">youtube.com/watch?v=qLJqFPxGEt4</em>
+                </h3>
+            </h1>
+        </div>
+
+        <!-- Connection Error -->
+        <div id="connection-error" style="color:rgb(248, 79, 79);">
+            <h1 style="margin-top: 45px;">Sorry Connection Error! <h3>Kindly
+                    Check Your Internet Connection and then <strong style="color: #4CAF50;">retry!</strong>
+                </h3>
+            </h1>
+        </div>
+
+        <div id="downloadContent-container">
+
+
+
+            <!-- Download Box -->
+            <div id="download-box">
+                <div id="image-container">
+                    <img id="thumbnail-img" alt="" srcset="">
+                </div>
+
+                <div id="right-content">
+                    <div id="title"></div>
+                    <div id="duration"></div>
+
+
+                </div>
+
+                <div id="downloadBtn-container">
+
+                    <div id="options-container">
+                        <div class="dropdown-container">
+                            <button class="dropdown-button" id="dropdownButton">
+                                <div class="dropdown-arrow"></div>
+                            </button>
+                            <div class="dropdown-content" id="dropdownContent">
+                            </div>
+                        </div>
+
+                        <button class="submit-button" id="download-btn">DOWNLOAD</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="how-to-use-youtube-downloader">
+            <h2 class="top-green-border">How to Use the YouTube Downloader Online?</h2>
+            <p>With the YouTube Video Downloader Online, effortlessly capture your favorite videos and
+                music from the web without the need for extra software. Experience the convenience of online
+                video downloading without any added complications.</p>
+            <p>Whether it's videos, TV shows, or sports highlights, YouTube Downloader makes it easy. Just paste the
+                video URL into the provided field and click the Download button. For an even smoother
+                experience, try our Chrome extension tailored for easy video downloads.</p>
+
+            <h2>Save Videos in High-Quality MP4 Format</h2>
+            <p>Streaming videos are great when you have a high-speed internet connection. But for those
+                moments offline, you might want a reliable solution.</p>
+            <p>Our downloader lets you secure videos in crystal-clear high-definition, ready to be saved as
+                MP4 files for your viewing pleasure.</p>
+        </div>
+
+        <h2 style="margin-top: 5ch;">Complete Tutorial: Effortlessly Download Videos Online in MP4 Format with HD Quality</h2>
+        <div class="video-download-tutorial">
+            <div class="tutorial-steps">
+                <p><strong>Start by Copying the URL from </strong> of the video you're interested, from 
+                    <strong><a
+                        href="https://www.youtube.com/" target="_blank" style="color: black; text-decoration: none;"><img width="18ch" src="./assets/youtube-logo.svg" alt=""> YouTube.com</a></strong>.
+                    Then, back to this page and paste this URL into the provided input field (Search Box).
+                    Hit "Enter" or select the "Download" button adjacent to the field to proceed.
+                </p>
+                <div class="how-to-use-middle-arrow"></div>
+            </div>
+            <div class="tutorial-img">
+                <img src="./assets/step-to-download.png" alt="Step 1: Copy URL">
+            </div>
+
+           
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <h4>© Copyright 2024 , Sharoon Honey Developement , Contact Us: <a
+                href="mailto:engr.sharoonhoney@gmail.com">engr.sharoonhoney@gmail.com</a></h4>
+    </footer>
+
+
+    <!-- <script src="./logic.js"></script>       -->
+
+    <script>
+
+        function toggleMenu() {
+            var menuItems = document.querySelector('.menu-items');
+            menuItems.style.display = (menuItems.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+    <script type="module" src="./logic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://youtubedownloaderonline.netlify.app/sitemap.xml
